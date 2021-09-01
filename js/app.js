@@ -9,7 +9,7 @@
 document.getElementById("search-btn").onclick=()=>{
     spinnerToggle("block")
     let searchInput=document.getElementById("search-field");
-    let url=`http://openlibrary.org/search.json?q=${searchInput.value}`
+    let url=`HTTPs://openlibrary.org/search.json?q=${searchInput.value}`
     bookContainer.textContent="";
    fetch(url)
    .then(res=>res.json())
