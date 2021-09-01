@@ -1,0 +1,43 @@
+/* card design */
+body{
+    background-color: ;
+}
+
+#book-container{
+    width: 80%;
+    margin: 3em auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 1em;
+    justify-content: center;
+}
+
+.card{
+    width: 200px;
+    border:none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.5) ;
+    transition: box-shadow .4s;
+    overflow: hidden;
+ 
+}
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.5);
+}
+
+.card img{
+    width: 100%;
+    transition: transform .4s;
+    height: 200px;
+}
+.card:hover img{
+transform: scale(1.1);
+}
+
+.book-text{
+    padding: .7em 1em;
+    
+}
+
+#loading{
+    display: none;
+}
